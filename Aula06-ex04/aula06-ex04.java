@@ -1,0 +1,27 @@
+/*
+Usando o length
+ */
+package aula06;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Fabiano
+ */
+public class Aula06_ex04 {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite a quantidade de valores a digitar: ");
+        int[] valores = new int[leitor.nextInt()];
+        System.out.println("Digite agora os valores: ");
+        for(int i=0; i<10; i++){
+            valores[i] = leitor.nextInt();
+        }
+        System.out.println("Valores digitados: ");
+        for(int i=0; i<(valores.length - 1); i++){
+            System.out.println(valores[i]);
+        System.out.println("FIM!");
+        }
+    }
+}

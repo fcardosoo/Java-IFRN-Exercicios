@@ -1,27 +1,25 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Função que calcula a média entre 2 valores
  */
 package aula08;
 
 import java.util.Scanner;
 
-public class Aula08_avaliacao {
-    public static void main(String args[]){
-        Scanner leitor=new Scanner(System.in);
-        double numero=0;
-        while(digita(numero)){
-            System.out.println("Digite um numero");
-            numero=leitor.nextDouble();
-        }
-        System.out.println("Saindo :p");
+/**
+ *
+ * @author Fabiano
+ */
+public class Aula08_ex01 {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite a primeira nota: ");
+        double nota1 = leitor.nextDouble();
+        System.out.println("Digite a segunda nota: ");
+        double nota2 = leitor.nextDouble();
+        double resultado = media(nota1, nota2);
+        System.out.println(resultado);
     }
-
-    public static boolean digita(double n){
-        if(n==-1){
-            return false;
-        }
-        return true;
+    public static double media(double nota1, double nota2){
+        return(nota1 + nota2)/2.0;
     }
 }
